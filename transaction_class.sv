@@ -1,7 +1,7 @@
 class transaction;
-    integer Data_in;
-    logic [3:0] Address;
-    logic W_EN;
-    logic RST;
-    integer Data_out;
+    rand logic [31:0] Data_in;
+    randc logic [3:0] Address;
+    rand logic W_EN;
+    rand logic RST;
+    logic [31:0] Data_out;
 endclass

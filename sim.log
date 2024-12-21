@@ -1,6 +1,8 @@
-# vsim -logfile sim.log -c -do "run -all" work.memory_tb 
-# Start time: 19:32:26 on Sep 19,2024
+# vsim -logfile sim.log -c -wlf Memory_file.wlf -voptargs="+acc" -do "run -all" work.memory_tb 
+# Start time: 14:20:09 on Dec 21,2024
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: sequencer_class.sv(41): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: sequencer_class.sv(51): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
 # //  Questa Sim-64
 # //  Version 10.7c win64 Aug 18 2018
 # //
@@ -18,5 +20,215 @@
 # Loading sv_std.std
 # Loading work.memory16x32_tb_sv_unit(fast)
 # Loading work.memory_tb(fast)
+# Loading work.intf(fast)
+# Loading work.Memory(fast)
+# Loading work.intf(fast)
 # run -all
-# Driver: Packet = '{Data_in:-252645136, Address:3, W_EN:1, RST:1, Data_out:x}
+# Seq: Rest mode 0 iteration
+# Driver: Packet = '{Data_in:0, Address:0, W_EN:0, RST:0, Data_out:x}       time = 5
+# Seq: Writing mode 1 iteration
+# Monitor: Data_out = 0       time = 11
+# Monitor: vif.data_out = 0
+# Scoreboard: Address 0 matched
+# Scoreboard: test_passed = 1
+# Driver: Packet = '{Data_in:1879359373, Address:10, W_EN:1, RST:1, Data_out:x}       time = 15
+# Seq: Writing mode 2 iteration
+# Monitor: Data_out = 0       time = 21
+# Monitor: vif.data_out = 0
+# Scoreboard: test_passed = 1
+# Driver: Packet = '{Data_in:2015801765, Address:7, W_EN:1, RST:1, Data_out:x}       time = 25
+# Seq: Writing mode 3 iteration
+# Monitor: Data_out = 0       time = 31
+# Monitor: vif.data_out = 0
+# Scoreboard: test_passed = 1
+# Driver: Packet = '{Data_in:2240887411, Address:15, W_EN:1, RST:1, Data_out:x}       time = 35
+# Seq: Writing mode 4 iteration
+# Monitor: Data_out = 0       time = 41
+# Monitor: vif.data_out = 0
+# Scoreboard: test_passed = 1
+# Driver: Packet = '{Data_in:2804973920, Address:0, W_EN:1, RST:1, Data_out:x}       time = 45
+# Seq: Writing mode 5 iteration
+# Monitor: Data_out = 0       time = 51
+# Monitor: vif.data_out = 0
+# Scoreboard: test_passed = 1
+# Driver: Packet = '{Data_in:3105349146, Address:8, W_EN:1, RST:1, Data_out:x}       time = 55
+# Seq: Writing mode 6 iteration
+# Monitor: Data_out = 0       time = 61
+# Monitor: vif.data_out = 0
+# Scoreboard: test_passed = 1
+# Driver: Packet = '{Data_in:300082229, Address:5, W_EN:1, RST:1, Data_out:x}       time = 65
+# Seq: Writing mode 7 iteration
+# Monitor: Data_out = 0       time = 71
+# Monitor: vif.data_out = 0
+# Scoreboard: test_passed = 1
+# Driver: Packet = '{Data_in:3455401729, Address:13, W_EN:1, RST:1, Data_out:x}       time = 75
+# Seq: Writing mode 8 iteration
+# Monitor: Data_out = 0       time = 81
+# Monitor: vif.data_out = 0
+# Scoreboard: test_passed = 1
+# Driver: Packet = '{Data_in:2177066634, Address:6, W_EN:1, RST:1, Data_out:x}       time = 85
+# Seq: Writing mode 9 iteration
+# Monitor: Data_out = 0       time = 91
+# Monitor: vif.data_out = 0
+# Scoreboard: test_passed = 1
+# Driver: Packet = '{Data_in:1231748636, Address:14, W_EN:1, RST:1, Data_out:x}       time = 95
+# Seq: Writing mode 10 iteration
+# Monitor: Data_out = 0       time = 101
+# Monitor: vif.data_out = 0
+# Scoreboard: test_passed = 1
+# Driver: Packet = '{Data_in:383389380, Address:3, W_EN:1, RST:1, Data_out:x}       time = 105
+# Seq: Writing mode 11 iteration
+# Monitor: Data_out = 0       time = 111
+# Monitor: vif.data_out = 0
+# Scoreboard: test_passed = 1
+# Driver: Packet = '{Data_in:148913243, Address:11, W_EN:1, RST:1, Data_out:x}       time = 115
+# Seq: Writing mode 12 iteration
+# Monitor: Data_out = 0       time = 121
+# Monitor: vif.data_out = 0
+# Scoreboard: test_passed = 1
+# Driver: Packet = '{Data_in:1730753738, Address:4, W_EN:1, RST:1, Data_out:x}       time = 125
+# Seq: Writing mode 13 iteration
+# Monitor: Data_out = 0       time = 131
+# Monitor: vif.data_out = 0
+# Scoreboard: test_passed = 1
+# Driver: Packet = '{Data_in:3026935720, Address:12, W_EN:1, RST:1, Data_out:x}       time = 135
+# Seq: Writing mode 14 iteration
+# Monitor: Data_out = 0       time = 141
+# Monitor: vif.data_out = 0
+# Scoreboard: test_passed = 1
+# Driver: Packet = '{Data_in:3826936224, Address:1, W_EN:1, RST:1, Data_out:x}       time = 145
+# Seq: Writing mode 15 iteration
+# Monitor: Data_out = 0       time = 151
+# Monitor: vif.data_out = 0
+# Scoreboard: test_passed = 1
+# Driver: Packet = '{Data_in:2241322740, Address:9, W_EN:1, RST:1, Data_out:x}       time = 155
+# Seq: Writing mode 16 iteration
+# Monitor: Data_out = 0       time = 161
+# Monitor: vif.data_out = 0
+# Scoreboard: test_passed = 1
+# Driver: Packet = '{Data_in:3678422829, Address:2, W_EN:1, RST:1, Data_out:x}       time = 165
+# Seq: Reading mode 17 iteration
+# Monitor: Data_out = 0       time = 171
+# Monitor: vif.data_out = 0
+# Scoreboard: test_passed = 1
+# Driver: Packet = '{Data_in:3104944611, Address:9, W_EN:0, RST:1, Data_out:x}       time = 175
+# Seq: Reading mode 18 iteration
+# Monitor: Data_out = 2241322740       time = 181
+# Monitor: vif.data_out = 2241322740
+# Scoreboard: Address 9 matched
+# Scoreboard: test_passed = 2
+# Driver: Packet = '{Data_in:1776390402, Address:15, W_EN:0, RST:1, Data_out:x}       time = 185
+# Seq: Reading mode 19 iteration
+# Monitor: Data_out = 2240887411       time = 191
+# Monitor: vif.data_out = 2240887411
+# Scoreboard: Address 15 matched
+# Scoreboard: test_passed = 3
+# Driver: Packet = '{Data_in:813894383, Address:13, W_EN:0, RST:1, Data_out:x}       time = 195
+# Seq: Reading mode 20 iteration
+# Monitor: Data_out = 3455401729       time = 201
+# Monitor: vif.data_out = 3455401729
+# Scoreboard: Address 13 matched
+# Scoreboard: test_passed = 4
+# Driver: Packet = '{Data_in:1000741398, Address:3, W_EN:0, RST:1, Data_out:x}       time = 205
+# Seq: Reading mode 21 iteration
+# Monitor: Data_out = 383389380       time = 211
+# Monitor: vif.data_out = 383389380
+# Scoreboard: Address 3 matched
+# Scoreboard: test_passed = 5
+# Driver: Packet = '{Data_in:1812703355, Address:1, W_EN:0, RST:1, Data_out:x}       time = 215
+# Seq: Reading mode 22 iteration
+# Monitor: Data_out = 3826936224       time = 221
+# Monitor: vif.data_out = 3826936224
+# Scoreboard: Address 1 matched
+# Scoreboard: test_passed = 6
+# Driver: Packet = '{Data_in:3085636660, Address:10, W_EN:0, RST:1, Data_out:x}       time = 225
+# Seq: Reading mode 23 iteration
+# Monitor: Data_out = 1879359373       time = 231
+# Monitor: vif.data_out = 1879359373
+# Scoreboard: Address 10 matched
+# Scoreboard: test_passed = 7
+# Driver: Packet = '{Data_in:1667831040, Address:7, W_EN:0, RST:1, Data_out:x}       time = 235
+# Seq: Reading mode 24 iteration
+# Monitor: Data_out = 2015801765       time = 241
+# Monitor: vif.data_out = 2015801765
+# Scoreboard: Address 7 matched
+# Scoreboard: test_passed = 8
+# Driver: Packet = '{Data_in:2307241523, Address:8, W_EN:0, RST:1, Data_out:x}       time = 245
+# Seq: Reading mode 25 iteration
+# Monitor: Data_out = 3105349146       time = 251
+# Monitor: vif.data_out = 3105349146
+# Scoreboard: Address 8 matched
+# Scoreboard: test_passed = 9
+# Driver: Packet = '{Data_in:3154582881, Address:5, W_EN:0, RST:1, Data_out:x}       time = 255
+# Seq: Reading mode 26 iteration
+# Monitor: Data_out = 300082229       time = 261
+# Monitor: vif.data_out = 300082229
+# Scoreboard: Address 5 matched
+# Scoreboard: test_passed = 10
+# Driver: Packet = '{Data_in:2568371874, Address:14, W_EN:0, RST:1, Data_out:x}       time = 265
+# Seq: Reading mode 27 iteration
+# Monitor: Data_out = 1231748636       time = 271
+# Monitor: vif.data_out = 1231748636
+# Scoreboard: Address 14 matched
+# Scoreboard: test_passed = 11
+# Driver: Packet = '{Data_in:1208105870, Address:12, W_EN:0, RST:1, Data_out:x}       time = 275
+# Seq: Reading mode 28 iteration
+# Monitor: Data_out = 3026935720       time = 281
+# Monitor: vif.data_out = 3026935720
+# Scoreboard: Address 12 matched
+# Scoreboard: test_passed = 12
+# Driver: Packet = '{Data_in:1208957063, Address:2, W_EN:0, RST:1, Data_out:x}       time = 285
+# Seq: Reading mode 29 iteration
+# Monitor: Data_out = 3678422829       time = 291
+# Monitor: vif.data_out = 3678422829
+# Scoreboard: Address 2 matched
+# Scoreboard: test_passed = 13
+# Driver: Packet = '{Data_in:1017207933, Address:0, W_EN:0, RST:1, Data_out:x}       time = 295
+# Seq: Reading mode 30 iteration
+# Monitor: Data_out = 2804973920       time = 301
+# Monitor: vif.data_out = 2804973920
+# Scoreboard: Address 0 matched
+# Scoreboard: test_passed = 14
+# Driver: Packet = '{Data_in:3052290705, Address:6, W_EN:0, RST:1, Data_out:x}       time = 305
+# Seq: Reading mode 31 iteration
+# Monitor: Data_out = 2177066634       time = 311
+# Monitor: vif.data_out = 2177066634
+# Scoreboard: Address 6 matched
+# Scoreboard: test_passed = 15
+# Driver: Packet = '{Data_in:1772518807, Address:11, W_EN:0, RST:1, Data_out:x}       time = 315
+# Seq: Reading mode 32 iteration
+# Monitor: Data_out = 148913243       time = 321
+# Monitor: vif.data_out = 148913243
+# Scoreboard: Address 11 matched
+# Scoreboard: test_passed = 16
+# Driver: Packet = '{Data_in:1291542158, Address:4, W_EN:0, RST:1, Data_out:x}       time = 325
+# Seq: Reading mode 33 iteration
+# Monitor: Data_out = 1730753738       time = 331
+# Monitor: vif.data_out = 1730753738
+# Scoreboard: Address 4 matched
+# Scoreboard: test_passed = 17
+# Driver: Packet = '{Data_in:1875176655, Address:11, W_EN:0, RST:1, Data_out:x}       time = 335
+# Enviroment: Index 0: 2804973920
+# Enviroment: Index 1: 3826936224
+# Enviroment: Index 2: 3678422829
+# Enviroment: Index 3: 383389380
+# Enviroment: Index 4: 1730753738
+# Enviroment: Index 5: 300082229
+# Enviroment: Index 6: 2177066634
+# Enviroment: Index 7: 2015801765
+# Enviroment: Index 8: 3105349146
+# Enviroment: Index 9: 2241322740
+# Enviroment: Index 10: 1879359373
+# Enviroment: Index 11: 148913243
+# Enviroment: Index 12: 3026935720
+# Enviroment: Index 13: 3455401729
+# Enviroment: Index 14: 1231748636
+# Enviroment: Index 15: 2240887411
+# Monitor: Data_out = 148913243       time = 341
+# Monitor: vif.data_out = 148913243
+# Scoreboard: Address 11 matched
+# Scoreboard: test_passed = 18
+# ** Note: $finish    : enviroment_class.sv(35)
+#    Time: 345 ns  Iteration: 1  Instance: /memory_tb
+# End time: 14:20:10 on Dec 21,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 2
